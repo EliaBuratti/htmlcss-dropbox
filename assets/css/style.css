@@ -13,14 +13,14 @@ body {
 }
 
 :root {
-    --bg_btn_blue:rgb(0 97 255);
+    --bg_btn_blue: rgb(0 97 255);
     --tx_color_white: white;
-    --bg_light:rgb(180 208 231);
+    --bg_light: rgb(180 208 231);
+    --tx_color_gray: gray;
 }
 
 a {
     text-decoration-line: none;
-    margin-right: 1rem;
 }
 
 i {
@@ -33,9 +33,29 @@ h1 {
     margin-bottom: 3rem;
 }
 
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+hr {
+    border-bottom: 1px solid var(--tx_color_gray);
+    margin: 2rem 70% 2rem 0;
+}
+
 .row {
     display: flex;
+} 
+
+
+.col-3 {
+    width: calc(100% / 12 * 3);
 }
+
+
 .col-4 {
     width: calc(100% / 12 * 4);
 }
@@ -54,6 +74,8 @@ h1 {
 
 .wrap {
     flex-wrap: wrap;
+    justify-content: space-between;
+
 }
 
 .inline-list {
@@ -76,6 +98,7 @@ h1 {
 
 .center {
     align-items: center;
+    text-align: center;
 }
 
 .buttons {
@@ -87,16 +110,19 @@ h1 {
     display: block;
 }
 
-.container
-{
-  max-width: 1170px;
-  width: 80%;
-  margin: auto;
+.container {
+    max-width: 1170px;
+    width: 80%;
+    margin: auto;
 }
 
 .actions a {
     display: inline-block;
     margin: 1.5rem 0;
+}
+
+.col-gap {
+    padding: 2rem 0;
 }
 
 
@@ -113,8 +139,10 @@ h1 {
 }
 
 .head-menu {
-    position: sticky;
+    position: fixed;
     box-shadow: 0 0 10px black;
+    width: 100%;
+    background-color: var(--tx_color_white);
 }
 
 .login {
@@ -146,8 +174,107 @@ h1 {
 
 .arrow {
     margin-top: 2rem;
+}
+
+/* end presentation */
+
+.main_container {
+
+    max-width: 1170px;
+    width: 60%;
+    margin: 8rem auto
+}
+
+.main_row {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -1rem;
+    flex-wrap: wrap;
+    row-gap: 3rem;
+}
+
+.flag {
+    padding: 3rem 0;
+}
+
+.flag a {
+    color: var(--tx_color_gray);
+    margin-right: 1rem;
+}
+
+.flag i {
+    color:var(--bg_btn_blue);
+
 
 }
 
+.targhet {
+    border-bottom: 1px solid var(--tx_color_gray);
+    padding: 1rem;
+}
 
-/* end presentation */
+.border {
+    border: 1px solid var(--tx_color_gray);
+    height: 100%;
+}
+
+.card {
+    margin: auto;
+}
+
+.card_button {
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    padding: 1rem 0;
+    background-color: var(--bg_btn_blue);
+}
+
+.try {
+
+    color: var(--tx_color_white);
+    padding: 1rem;
+
+}
+
+.check i {
+    color: var(--bg_btn_blue);
+}
+
+.contains {
+    margin: 10%;
+}
+
+.contains li {
+    padding: 1rem 0;
+    
+}
+.gap {
+    padding: 0 1rem;
+}
+
+.plan {
+    line-height: 3rem;
+}
+
+.period {
+    color: var(--tx_color_gray);
+}
+
+.offert .icon i, .check i {
+    margin-right: 0.5rem;
+}
+
+.top {
+    margin-top: 1.5rem;
+    margin-left: calc(10% + 1rem);
+    margin-right: 10%;
+}
+
+.enterprise {
+    padding: 0 5%;
+}
+
+.enterprise>p, h3 {
+    padding: 1rem 0 2rem 0;
+}
