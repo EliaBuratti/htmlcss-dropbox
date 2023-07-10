@@ -15,6 +15,7 @@ body {
 :root {
     --bg_btn_blue:rgb(0 97 255);
     --tx_color_white: white;
+    --bg_light:rgb(180 208 231);
 }
 
 a {
@@ -22,14 +23,37 @@ a {
     margin-right: 1rem;
 }
 
+i {
+    color: black;
+}
 
+h1 {
+    font-size: 5rem;
+    font-weight: 800;
+    margin-bottom: 3rem;
+}
 
 .row {
     display: flex;
 }
+.col-4 {
+    width: calc(100% / 12 * 4);
+}
 
 .col-6 {
     width: calc(100% / 12 * 6);
+}
+
+.col-8 {
+    width: calc(100% / 12 * 8);
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.wrap {
+    flex-wrap: wrap;
 }
 
 .inline-list {
@@ -50,10 +74,34 @@ a {
     justify-content: end;
 }
 
+.center {
+    align-items: center;
+}
+
 .buttons {
     padding: 1rem;
     margin-left: 2rem;
 }
+
+.buttons_block {
+    display: block;
+}
+
+.container
+{
+  max-width: 1170px;
+  width: 80%;
+  margin: auto;
+}
+
+.actions a {
+    display: inline-block;
+    margin: 1.5rem 0;
+}
+
+
+
+/* nav section */
 
 .logo {
     display: flex;
@@ -79,3 +127,27 @@ a {
     color: var(--tx_color_white);
     padding: 0.5rem 1rem;
 }
+
+/* end nav section */
+
+/* presentation */
+
+.presentation {
+    background-color: var(--bg_light);
+    padding-top: 5rem;
+    height: 45rem;
+}
+
+.jumbotron {
+    object-fit: cover;
+    max-width: 100%;
+
+}
+
+.arrow {
+    margin-top: 2rem;
+
+}
+
+
+/* end presentation */
