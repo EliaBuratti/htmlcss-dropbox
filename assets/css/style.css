@@ -1,7 +1,7 @@
 /* css reset */
 
 * {
-    bottom: 0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -12,3 +12,70 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+:root {
+    --bg_btn_blue:rgb(0 97 255);
+    --tx_color_white: white;
+}
+
+a {
+    text-decoration-line: none;
+    margin-right: 1rem;
+}
+
+
+
+.row {
+    display: flex;
+}
+
+.col-6 {
+    width: calc(100% / 12 * 6);
+}
+
+.inline-list {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.right {
+    align-items: center;
+    justify-content: end;
+}
+
+.buttons {
+    padding: 1rem;
+    margin-left: 2rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    margin-right: 2rem;
+
+}
+
+.head-menu {
+    position: sticky;
+    box-shadow: 0 0 10px black;
+}
+
+.login {
+    background-color: transparent;
+    color: black;
+}
+
+.start {
+    background-color: var(--bg_btn_blue);
+    color: var(--tx_color_white);
+    padding: 0.5rem 1rem;
+}
