@@ -17,6 +17,7 @@ body {
     --tx_color_white: white;
     --bg_light: rgb(180 208 231);
     --tx_color_gray: gray;
+    --bg_members: rgb(245 245 245);
 }
 
 a {
@@ -80,7 +81,10 @@ img {
 .wrap {
     flex-wrap: wrap;
     justify-content: space-between;
+}
 
+.about {
+    text-decoration-line: underline;
 }
 
 .inline-list {
@@ -308,3 +312,27 @@ img {
 .gray {
     color: var(--tx_color_gray);
 }
+
+.members div {
+    background-color: green;
+}
+
+.logos.col-4 img {
+    filter: invert(1);
+    width: 15rem;
+}
+
+.logos div {
+    width: 50%;
+    height: 50%;
+    position: relative;
+    height: 20rem;
+}
+
+.logo_center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
