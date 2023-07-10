@@ -46,6 +46,11 @@ hr {
     margin: 2rem 70% 2rem 0;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
 .row {
     display: flex;
 } 
@@ -156,6 +161,10 @@ hr {
     padding: 0.5rem 1rem;
 }
 
+.buttons a:last-child {
+    margin-left: 1rem;
+}
+
 /* end nav section */
 
 /* presentation */
@@ -253,6 +262,10 @@ hr {
     padding: 0 1rem;
 }
 
+.gap-5 {
+    margin: 5rem 0;
+}
+
 .plan {
     line-height: 3rem;
 }
@@ -277,4 +290,21 @@ hr {
 
 .enterprise>p, h3 {
     padding: 1rem 0 2rem 0;
+}
+
+
+.meet {
+    padding-left: 3rem;
+    text-align: left;
+}
+
+.btn-light {
+    border: 2px solid var(--tx_color_gray);
+    padding: 1rem;
+    width: fit-content;
+    margin:2rem 0
+}
+
+.gray {
+    color: var(--tx_color_gray);
 }
