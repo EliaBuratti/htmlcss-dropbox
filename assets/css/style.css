@@ -16,18 +16,19 @@ body {
 :root {
     --bg_btn_blue: rgb(0 97 255);
     --tx_color_white: white;
+    --color_black:black;
     --bg_light: rgb(180 208 231);
     --tx_color_gray: gray;
     --bg_members: rgb(245 245 245);
-    --drbx-accent: #0160FF;
-    --drbx-square1: #A3D39A;
-    --drbx-square2-aternativeFont: #60092B;
-    --drbx-square3: #0192CE;
-    --drbx-square4: #FE1C1D;
-    --drbx-square5: #D4011F;
-    --bk-and-square6: #B5D0E6;
-    --drbx-square7: #0D2580;
-    --drbx-square8: #FED831;
+    --drbx_accent: #0160FF;
+    --drbx_square1: #A3D39A;
+    --drbx_square2_aternativeFont: #60092B;
+    --drbx_square3: #0192CE;
+    --drbx_square4: #FE1C1D;
+    --drbx_square5: #D4011F;
+    --bk_and_square6: #B5D0E6;
+    --drbx_square7: #0D2580;
+    --drbx_square8: #FED831;
 }
 
 
@@ -97,8 +98,8 @@ img {
     justify-content: space-between;
 }
 
-.p-4 {
-    padding: 4rem;
+.p-3 {
+    padding: 3rem;
 }
 
 .about {
@@ -262,10 +263,8 @@ nav li a {
 }
 
 .try {
-
     color: var(--tx_color_white);
     padding: 1rem;
-
 }
 
 .check i {
@@ -331,6 +330,11 @@ nav li a {
     color: var(--tx_color_gray);
 }
 
+.free {
+    background-color: var(--tx_color_white);
+    color: var(--color_black);
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+}
 
 
 .logos.col-4 img {
@@ -345,9 +349,12 @@ nav li a {
     height: 20rem;
 }
 
-.logos {
+.members, .logos {
     height: 100%;
+    position: relative;
+    z-index: -1;
 }
+
 
 .logo_center {
     position: absolute;
@@ -363,33 +370,47 @@ nav li a {
 }
 
 .designit {
-    background-color: var(--drbx-square1);
+    background-color: var(--drbx_square1);
 }
 
 .asu {
-    background-color: var(--drbx-square2-aternativeFont);
+    background-color: var(--drbx_square2_aternativeFont);
 }
 
 .uf_florida {
-    background-color: var(--drbx-square3);
+    background-color: var(--drbx_square3);
 }
 
 .topps {
-    background-color: var(--drbx-square4);
+    background-color: var(--drbx_square4);
 }
 
 .wbr {
-    background-color: var(--drbx-square5);
+    background-color: var(--drbx_square5);
 }
 
 .hearst {
-    background-color: var(--bk-and-square6);
+    background-color: var(--bk_and_square6);
 }
 
 .lonely {
-    background-color: var(--drbx-square7);
+    background-color: var(--drbx_square7);
 }
 
 .c_channel {
-    background-color: var(--drbx-square8);
+    background-color: var(--drbx_square8);
+}
+
+.business {
+    background-color: var(--bk_and_square6);
+}
+
+.business .col-4 .d-flex {
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.business h2 {
+    color: var(--drbx_square2_aternativeFont);
 }
