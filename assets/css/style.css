@@ -482,10 +482,14 @@ footer a, footer a>i {
 }
 
 .response {
-   padding-top: 1rem;
-   opacity: 0;
-   position:absolute;
-   transition: 0.5s;
+    position: absolute;
+    padding-top: 1rem;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.answer {
+    position: relative;
 }
 
 /* effects */
@@ -517,14 +521,24 @@ footer a, footer a>i {
     opacity: 0.5;
 }
  /* i pulsanti outline all'hover diventano neri con testo bianco */
+ 
 
 
 
 
 /* nella sezione delle FAQs, all'hover su una faq la freccetta routa a testa in su e appare il paragrafo sotto alla domanda. */
 
-.response:hover {
+.answer:hover .response {
     opacity: 1;
     position: relative;
-
 }
+
+.answer:hover i {
+    transform: rotate(180deg);
+}
+
+.answer i {
+    transition: 0.5s;
+}
+
+
