@@ -186,11 +186,6 @@ nav li a {
     background-color: var(--tx_color_white);
 }
 
-.empty {
-    background-color: transparent;
-    color: black;
-}
-
 .fill {
     background-color: var(--bg_btn_blue);
     color: var(--tx_color_white);
@@ -339,7 +334,7 @@ nav li a {
     margin:2rem 0
 }
 
-.gray {
+.btn-light a {
     color: var(--tx_color_gray);
 }
 
@@ -522,8 +517,16 @@ footer a, footer a>i {
 }
  /* i pulsanti outline all'hover diventano neri con testo bianco */
  
+.dark:hover {
+    border: none;
+    background-color: black;
+    color: var(--tx_color_white);
+    width: fit-content;
+}
 
-
+.dark:hover a {
+    color: var(--tx_color_white);
+}
 
 
 /* nella sezione delle FAQs, all'hover su una faq la freccetta routa a testa in su e appare il paragrafo sotto alla domanda. */
