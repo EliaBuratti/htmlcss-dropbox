@@ -147,8 +147,15 @@ img {
     margin: auto;
 }
 
+.container_large {
+    max-width: 1440px;
+    width: 90%;
+    margin: auto;
+}
+
 .actions a {
-    display: inline-block;
+    display: block;
+    width: max-content;
     margin: 1.5rem 0;
 }
 
@@ -197,7 +204,7 @@ nav li a {
 .presentation {
     background-color: var(--bg_light);
     padding-top: 5rem;
-    height: 45rem;
+    height: 50rem;
 }
 
 .jumbotron {
@@ -207,7 +214,7 @@ nav li a {
 }
 
 .arrow {
-    margin-top: 2rem;
+    margin-top: 40%;
 }
 
 /* end presentation */
@@ -421,13 +428,48 @@ nav li a {
 /* FAQ */
 
 .question {
-
     padding-top: 2rem;
     padding-bottom: 2rem;
     border-top: 1px solid var(--tx_color_gray);
-
 }
 
 .question:last-child {
-    border-bottom: 1px solid var(--tx_color_gray)
+    border-bottom: 1px solid var(--tx_color_gray);
+}
+
+/* footer section */
+
+footer {
+    background-color: var(--color_black);
+    color: var(--tx_color_white);
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+
+}
+
+footer ul {
+    line-height: 2.5rem;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+footer a, footer a>i {
+    color: var(--tx_color_white);
+
+}
+
+.language a, .language a>i {
+    color: var(--tx_color_gray);
+}
+
+.language a {
+    border-top: 2px solid var(--tx_color_gray);
+    padding: 2rem 0 2rem 0;
+}
+
+.language a>span {
+    margin: 0 0.5rem;
+
 }
