@@ -186,12 +186,12 @@ nav li a {
     background-color: var(--tx_color_white);
 }
 
-.login {
+.empty {
     background-color: transparent;
     color: black;
 }
 
-.start {
+.fill {
     background-color: var(--bg_btn_blue);
     color: var(--tx_color_white);
     padding: 0.5rem 1rem;
@@ -502,15 +502,20 @@ footer a, footer a>i {
     padding-bottom: 1.55rem;
 }
 
-.buttons .login:hover {
-    color: var(--bg_btn_blue);
-}
 
-.buttons .start:hover {
-    box-shadow: 0 0 10px var(--bg_btn_blue);
-}
 
 /* i pulsanti blue all'hover sbiadiscono leggermente */
+.fill:hover {
+    box-shadow: 0 0 10px var(--bg_btn_blue);
+    opacity: 0.7;
+    background-color: var(--bg_btn_blue);
+    color: var(--tx_color_white);
+}
+
+.empty:hover {
+    color: var(--bg_btn_blue);
+    opacity: 0.5;
+}
  /* i pulsanti outline all'hover diventano neri con testo bianco */
 
 
