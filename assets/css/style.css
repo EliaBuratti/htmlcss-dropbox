@@ -176,9 +176,13 @@ nav li a {
 }
 
 .head-menu {
-    position: fixed;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
     box-shadow: 0 0 10px black;
     width: 100%;
+    height: 5rem;
     background-color: var(--tx_color_white);
 }
 
@@ -485,6 +489,34 @@ footer a, footer a>i {
 }
 
 /* effects */
+
+
+
+
+/* le voci di menu nell'header all'hover hanno un bordino che appare sotto */
+
+
+.head-menu.d-flex .inline-list a:hover {
+    height: 50%;
+    border-bottom: 4px solid black;
+    padding-bottom: 1.55rem;
+}
+
+.buttons .login:hover {
+    color: var(--bg_btn_blue);
+}
+
+.buttons .start:hover {
+    box-shadow: 0 0 10px var(--bg_btn_blue);
+}
+
+/* i pulsanti blue all'hover sbiadiscono leggermente */
+ /* i pulsanti outline all'hover diventano neri con testo bianco */
+
+
+
+
+/* nella sezione delle FAQs, all'hover su una faq la freccetta routa a testa in su e appare il paragrafo sotto alla domanda. */
 
 .response:hover {
     opacity: 1;
