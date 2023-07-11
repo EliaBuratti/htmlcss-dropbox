@@ -34,6 +34,7 @@ body {
 
 a {
     text-decoration-line: none;
+    color: var(--color_black);
 }
 
 i {
@@ -135,6 +136,7 @@ img {
 .buttons {
     padding: 1rem;
     margin-left: 2rem;
+
 }
 
 .buttons_block {
@@ -244,8 +246,6 @@ nav li a {
 
 .flag i {
     color:var(--bg_btn_blue);
-
-
 }
 
 .targhet {
@@ -360,7 +360,6 @@ nav li a {
 .members, .logos {
     height: 100%;
     position: relative;
-    z-index: -1;
 }
 
 
@@ -498,7 +497,7 @@ footer a, footer a>i {
 .head-menu.d-flex .inline-list a:hover {
     height: 50%;
     border-bottom: 4px solid black;
-    padding-bottom: 1.55rem;
+    padding-bottom: 1.6rem;
 }
 
 
@@ -545,3 +544,17 @@ footer a, footer a>i {
 }
 
 
+/* bonus */
+
+.multitasking:hover, .card.border:hover{
+    box-shadow: 0 0 10px black;
+}
+
+footer a:hover {
+    text-decoration-line: underline;
+
+}
+
+.logos>div:hover {
+    border: 5px solid rgb(255 255 255 / 50%);;
+}
