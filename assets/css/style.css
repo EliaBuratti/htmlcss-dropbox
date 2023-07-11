@@ -362,6 +362,10 @@ nav li a {
     position: relative;
 }
 
+.info {
+    padding-bottom: 1.5rem;
+}
+
 
 .logo_center {
     position: absolute;
@@ -545,9 +549,12 @@ footer a, footer a>i {
 
 
 /* bonus */
-
+.multitasking, .card {
+    transition: all 0.3s;
+}
 .multitasking:hover, .card.border:hover{
     box-shadow: 0 0 10px black;
+    border-radius: 1rem;
 }
 
 footer a:hover {
@@ -557,4 +564,12 @@ footer a:hover {
 
 .logos>div:hover {
     border: 5px solid rgb(255 255 255 / 50%);;
+}
+
+.fill, .dark{
+    transition: all 0.5s;
+}
+
+.fill:hover, .dark:hover {
+    transform: scale(1.1);
 }
