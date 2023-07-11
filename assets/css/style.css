@@ -123,6 +123,10 @@ img {
     justify-content: end;
 }
 
+.justify_between {
+    justify-content: space-between;
+}
+
 .center {
     align-items: center;
     text-align: center;
@@ -151,8 +155,6 @@ img {
 nav li a {
     color: black;
 }
-
-
 
 
 /* nav section */
@@ -365,7 +367,7 @@ nav li a {
 
 /* members */
 
-.members .col-4.p-4 {
+.members .col-4.p-3 {
     background-color: var(--bg_members);
 }
 
@@ -405,7 +407,7 @@ nav li a {
     background-color: var(--bk_and_square6);
 }
 
-.business .col-4 .d-flex {
+.business .col-6 .d-flex {
     height: 100%;
     align-items: center;
     justify-content: center;
@@ -413,4 +415,19 @@ nav li a {
 
 .business h2 {
     color: var(--drbx_square2_aternativeFont);
+    margin: 4rem 0;
+}
+
+/* FAQ */
+
+.question {
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-top: 1px solid var(--tx_color_gray);
+
+}
+
+.question:last-child {
+    border-bottom: 1px solid var(--tx_color_gray)
 }
