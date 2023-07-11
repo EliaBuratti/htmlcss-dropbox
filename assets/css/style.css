@@ -10,6 +10,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    min-width: 1440px;
 }
 
 :root {
@@ -18,7 +19,17 @@ body {
     --bg_light: rgb(180 208 231);
     --tx_color_gray: gray;
     --bg_members: rgb(245 245 245);
+    --drbx-accent: #0160FF;
+    --drbx-square1: #A3D39A;
+    --drbx-square2-aternativeFont: #60092B;
+    --drbx-square3: #0192CE;
+    --drbx-square4: #FE1C1D;
+    --drbx-square5: #D4011F;
+    --bk-and-square6: #B5D0E6;
+    --drbx-square7: #0D2580;
+    --drbx-square8: #FED831;
 }
+
 
 a {
     text-decoration-line: none;
@@ -48,7 +59,7 @@ hr {
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -78,9 +89,16 @@ img {
     width: 100%;
 }
 
+.col-gap {
+    padding: 2rem 0;
+}
 .wrap {
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.p-4 {
+    padding: 4rem;
 }
 
 .about {
@@ -89,7 +107,6 @@ img {
 
 .inline-list {
     align-items: center;
-    display: flex;
     justify-content: center;
     list-style: none;
     gap: 2rem;
@@ -130,9 +147,10 @@ img {
     margin: 1.5rem 0;
 }
 
-.col-gap {
-    padding: 2rem 0;
+nav li a {
+    color: black;
 }
+
 
 
 
@@ -313,13 +331,11 @@ img {
     color: var(--tx_color_gray);
 }
 
-.members div {
-    background-color: green;
-}
+
 
 .logos.col-4 img {
     filter: invert(1);
-    width: 15rem;
+    width: 40%;
 }
 
 .logos div {
@@ -329,6 +345,10 @@ img {
     height: 20rem;
 }
 
+.logos {
+    height: 100%;
+}
+
 .logo_center {
     position: absolute;
     top: 50%;
@@ -336,3 +356,40 @@ img {
     transform: translate(-50%, -50%);
 }
 
+/* members */
+
+.members .col-4.p-4 {
+    background-color: var(--bg_members);
+}
+
+.designit {
+    background-color: var(--drbx-square1);
+}
+
+.asu {
+    background-color: var(--drbx-square2-aternativeFont);
+}
+
+.uf_florida {
+    background-color: var(--drbx-square3);
+}
+
+.topps {
+    background-color: var(--drbx-square4);
+}
+
+.wbr {
+    background-color: var(--drbx-square5);
+}
+
+.hearst {
+    background-color: var(--bk-and-square6);
+}
+
+.lonely {
+    background-color: var(--drbx-square7);
+}
+
+.c_channel {
+    background-color: var(--drbx-square8);
+}
