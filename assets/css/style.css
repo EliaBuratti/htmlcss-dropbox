@@ -471,5 +471,23 @@ footer a, footer a>i {
 
 .language a>span {
     margin: 0 0.5rem;
+}
+
+.prova {
+    position: relative;
+}
+
+.response {
+   padding-top: 1rem;
+   opacity: 0;
+   position:absolute;
+   transition: 0.5s;
+}
+
+/* effects */
+
+.response:hover {
+    opacity: 1;
+    position: relative;
 
 }
