@@ -55,7 +55,11 @@ h3 {
     font-size: 2rem;
 }
 
-hr {
+h4 {
+    font-size: 1.5rem;
+}
+
+.width-10 {
     border-bottom: 1px solid var(--tx_color_gray);
     margin: 2rem 70% 2rem 0;
 }
@@ -131,6 +135,7 @@ img {
 .center {
     align-items: center;
     text-align: center;
+    justify-content:center ;
 }
 
 .buttons {
@@ -153,6 +158,10 @@ img {
     max-width: 1440px;
     width: 90%;
     margin: auto;
+}
+
+.left {
+    text-align: left;
 }
 
 .actions a {
