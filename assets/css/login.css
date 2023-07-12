@@ -61,3 +61,39 @@
     background-color: white;
     padding: 0.5rem;
 }
+
+.cookies {
+    background-color: white;
+    height: 5rem;
+    margin: 0 1rem;
+    font-size: 0.85rem;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0.5rem;
+    left: 0;
+}
+
+.cookies .col-2>div{
+    margin: 0 1rem;
+}
+
+.btn-black {
+    background-color: rgb(46, 46, 46);
+    padding: calc(1rem + 2px);
+    transition: all 0.5s;
+}
+
+
+/* effects */
+
+.cookies .col-2 .btn-black:hover {
+    box-shadow: 0 0 10px var(--bg_btn_blue);
+    opacity: 0.7;
+    background-color: var(--bg_btn_blue);
+    color: var(--tx_color_white);
+    background: rgb(0 97 255);
+    transform: scale(1.1);
+}
+
+
+

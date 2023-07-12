@@ -73,6 +73,10 @@ img {
     display: flex;
 } 
 
+.col-2 {
+    width: calc(100% / 12 * 2);
+}
+
 
 .col-3 {
     width: calc(100% / 12 * 3);
@@ -89,6 +93,10 @@ img {
 
 .col-8 {
     width: calc(100% / 12 * 8);
+}
+
+.col-10 {
+    width: calc(100% / 12 * 10);
 }
 
 .col-12 {
@@ -340,7 +348,6 @@ nav li a {
     border: 2px solid var(--tx_color_gray);
     padding: 1rem;
     width: fit-content;
-    margin:2rem 0
 }
 
 .btn-light a {
@@ -370,6 +377,10 @@ nav li a {
 .members, .logos {
     height: 40rem;
     position: relative;
+}
+
+.meet .btn-light {
+    margin: 2rem 0;
 }
 
 .info {
@@ -453,10 +464,11 @@ nav li a {
 
 footer {
     background-color: var(--color_black);
-    color: var(--tx_color_white);
     padding-top: 5rem;
-    padding-bottom: 3rem;
-
+    padding-bottom: 0.5rem;
+}
+footer h3 {
+    color: var(--tx_color_white);
 }
 
 footer ul {
@@ -570,7 +582,7 @@ footer a, footer a>i {
     border-radius: 1rem;
 }
 
-footer a:hover {
+footer .container_large a:hover {
     text-decoration-line: underline;
 
 }
